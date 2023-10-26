@@ -30,7 +30,7 @@ do
 clear
 wmctrl -r :ACTIVE: -b add,maximized_vert,maximized_horz 2>/dev/null 1>/dev/null 0>/dev/null
 source /home/$(whoami)/.config_montar_unidades/montar_unidades 2>/dev/null 1>/dev/null 0>/dev/null
-echo -e "${rosa}"; figlet -c sukigsxxx; echo -e "${borra_colores}"
+echo -e "${rosa}"; figlet -c sukigsx; echo -e "${borra_colores}"
 echo -e""
 echo -e "${verde} Diseñado por sukigsx / Contacto:  sukisx.mbsistemas@gmail.com${borra_colores}"
 echo -e "${verde}                                   https://mbsistemas.ddns.net${borra_colores}"
