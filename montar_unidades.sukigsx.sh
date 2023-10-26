@@ -801,7 +801,10 @@ done
 archivo_local="montar_unidades.sukigsx.sh" # Nombre del archivo local
 ruta_repositorio="https://github.com/sukigsx/montar_unidades.git" #ruta del repositorio para actualizar y clonar con git clone
 
-descarga=$(pwd)
+# Obtener la ruta del script
+descarga=$(dirname "$(readlink -f "$0")")
+
+
 git clone $ruta_repositorio /tmp/comprobar >/dev/null 2>&1
 
 diff $descarga/$archivo_local /tmp/comprobar/$archivo_local >/dev/null 2>&1
