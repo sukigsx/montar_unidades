@@ -799,7 +799,7 @@ done
 
 #comprueba aztualiczacion del script
 
-archivo_local="montar_unidades.sukigsx.sh" # Nombre del archivo local
+archivo_local="montar_unidades.sh" # Nombre del archivo local
 ruta_repositorio="https://github.com/sukigsx/montar_unidades.git" #ruta del repositorio para actualizar y clonar con git clone
 
 # Obtener la ruta del script
