@@ -18,7 +18,7 @@ clear
 figlet -c Gracias por
 figlet -c utilizar mi
 figlet -c script
-wmctrl -r :ACTIVE: -b remove,maximized_vert,maximized_horz 2>/dev/null 1>/dev/null 0>/dev/null
+#wmctrl -r :ACTIVE: -b remove,maximized_vert,maximized_horz 2>/dev/null 1>/dev/null 0>/dev/null
 exit
 }
 #Fin de control de control c
@@ -28,7 +28,7 @@ function menu(){
 while :
 do
 clear
-wmctrl -r :ACTIVE: -b add,maximized_vert,maximized_horz 2>/dev/null 1>/dev/null 0>/dev/null
+#wmctrl -r :ACTIVE: -b add,maximized_vert,maximized_horz 2>/dev/null 1>/dev/null 0>/dev/null
 source /home/$(whoami)/.config_montar_unidades/montar_unidades 2>/dev/null 1>/dev/null 0>/dev/null
 echo -e "${rosa}"; figlet -c sukigsx; echo -e "${borra_colores}"
 echo -e""
@@ -106,7 +106,7 @@ case $opcion in
             echo -e "${verde} El script se ha actualizado, es necesario cargarlo de nuevo.${borra_colores}"
             echo -e "${amarillo} Se cerrara el terminal en 5 segundos.${borra_colores}"
             sleep 5
-            xdotool windowkill `xdotool getactivewindow`
+            #xdotool windowkill `xdotool getactivewindow`
         fi
         ;;
 
@@ -585,7 +585,7 @@ done
 #fichero configuracion en /home/usuario/.config/config_montar_unidades
 function configuracion()
  {
-wmctrl -r :ACTIVE: -b add,maximized_vert,maximized_horz 2>/dev/null 1>/dev/null 0>/dev/null
+#wmctrl -r :ACTIVE: -b add,maximized_vert,maximized_horz 2>/dev/null 1>/dev/null 0>/dev/null
 #elimina /home/$(whoami)/.config/montar_unidades_automatico
 rm /home/$(whoami)/.config/montar_unidades_automatico 2>/dev/null 1>/dev/null 0>/dev/null
 
@@ -709,7 +709,7 @@ else
     echo -e ""
     echo -e "${azul} Pulsa una tecla para continuar.${borra_colores}"
     read pasue
-    wmctrl -r :ACTIVE: -b remove,maximized_vert,maximized_horz 2>/dev/null 1>/dev/null 0>/dev/null
+    #wmctrl -r :ACTIVE: -b remove,maximized_vert,maximized_horz 2>/dev/null 1>/dev/null 0>/dev/null
     exit
 fi
 
@@ -731,7 +731,7 @@ echo -e ""
         conexion="no" #sabemos si tenemos conexion a internet o no
     fi
 
-for paquete in net-tools figlet smbclient wmctrl git nano cifs-utils nmap diff xdotool #ponemos el fostware a instalar separado por espacios
+for paquete in net-tools figlet smbclient git nano cifs-utils nmap diff #ponemos el fostware a instalar separado por espacios
 do
     which $paquete 2>/dev/null 1>/dev/null 0>/dev/null #comprueba si esta el programa llamado programa
     sino=$? #recojemos el 0 o 1 del resultado de which
