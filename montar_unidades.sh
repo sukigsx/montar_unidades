@@ -93,6 +93,7 @@ case $opcion in
             echo ""
             chmod -R +w /tmp/comprobar
             rm -R /tmp/comprobar
+            sleep 2
         else
             #hay que actualizar, comprueba y actualiza
             echo ""
