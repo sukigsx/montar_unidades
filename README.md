@@ -83,6 +83,12 @@ Este script de shell tiene como objetivo verificar la presencia de ciertos progr
 - Si hay diferencias (`diff` no retorna 0), muestra un mensaje indicando que el script no está actualizado y sugiere utilizar la opción 0 del menú para actualizar.
 
 # Instalacion
-- Clonar el repositorio con la orden (git clone https://github.com/sukigsx/montar_unidades.git)
+- Clonar el repositorio con la orden
+
+      git clone https://github.com/sukigsx/montar_unidades.git
+
+- Tambien puedes utilizar mi script (ejecutar_escript), en el cual puedes instalar todos mis script del repositorio.
+
+        git clone https://github.com/sukigsx/ejecutar_scripts.git
 
 ## ¡ Espero os guste !
