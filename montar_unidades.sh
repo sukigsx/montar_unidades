@@ -603,7 +603,7 @@ clear
 echo -e ""
 echo -e "${azul} Recojida de datos para configurar el script con tu Servidor Samba.${borra_colores}"
 echo -e ""
-ip=$(route -n | awk '{print $2}' | grep 192) #saca la ip de la puerta de enlace
+ip=$(ip route | awk '/default/ {print $3}') #saca la ip de la puerta de enlace
 echo -e "${verde} Buscando direcciones ip donde estara tu servidor samba."
 echo -e "${verde} Si no encuentra, la puedes introducir a mano."
 echo -e ""
